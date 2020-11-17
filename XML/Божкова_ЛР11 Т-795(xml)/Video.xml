@@ -1,0 +1,52 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "/data.dtd">
+
+<VIDEO>
+    <main>
+        <manufacturer title="производитель">ASUS</manufacturer>
+        <model title="модель">EAH5670/DI/512MD5</model>
+        <length title="длина">170 mm</length>
+    </main>
+    <VID>
+        <videoMemory title="количество видеопамяти">512 mb</videoMemory>
+        <RAMDAC title="RAMDAC">400 mg gc, 10 бит на канал</RAMDAC>
+        <maximumResolution2D3D title="Максимальное разрешение 2D/3d">2560 x 1600 при подключении DVI или DisplayPort 2048 x 1536, 2048 x 1536 1920x1200 при подключении по HDMI</maximumResolution2D3D>
+        <HDCP title="HDCP">Есть (1080p)</HDCP>
+        <API title="API">DirectX 11 OpenGL 3.2</API>
+    </VID>
+    <MemorySuport>
+        <type title="Тип">GDDR5</type>
+        <memoryBusWidth title="Размер шины памяти">128 бит</memoryBusWidth>
+        <memoryFrequency title="Частота памяти">1000 МГц</memoryFrequency>
+    </MemorySuport>
+    <configure>
+        <chip title="Чип">Radeon HD 5670</chip>
+        <techprocess title="Техпроцесс">40 нм</techprocess>
+        <chipFrequency title="Частота чипа">775 МГц</chipFrequency>
+        <pixelsConveers title="кол-во пиксельных конвееров ">20, 8 блоков выборки текстур</pixelsConveers>
+        <processors title="Процессор">400</processors>
+    </configure>
+    <connectors>
+        <ports title="Порты">DVI-I, HDMI, 15-пиновый коннектор, D-Sub</ports>
+    </connectors>
+    <interfaces>
+        <interface title="Интерфейс">PCI Express 2.1 16x (совместим с PCI Express 1.x) с возможностью объеденения карт при помощи CrossfireX</interface>
+    </interfaces>
+    <coulers>
+        <speedControl title="Управление скоростью">Нет</speedControl>
+        <cool title="Охлаждение">Активное (радиатор с вентилятором)</cool>
+        <constructionCoolSystem title="Конструкция системы охлаждения">Система охлаждения блокирует соседний с видеокартой слот расширения</constructionCoolSystem>
+    </coulers>
+    <supply>
+        <powerConnector title="Разъем питания">Нет</powerConnector>
+    </supply>
+    <compatibility>
+        <systemPermitions title="Системные требования">Блок питания мощностью 400 Вт или 500 Вт для двух видеокарт в режиме CrossFire</systemPermitions>
+        <computingSupport title="Поддержка вычислений общего назначения">ATI stream, OpenCL 1.0, DirectCompute 11</computingSupport>
+        <OSSuppurt title="Поддержка Ос">Windows XP x64, Windows XP, Windows MCE 2005, Windows Vista, Windows 7</OSSuppurt>
+    </compatibility>
+    <logistic>
+        <size title="Размер упаковки">30.5 x 22.5 x 5.7 cм</size>
+        <wightBrutal title="Масса брутто">0.775 кг</wightBrutal>
+    </logistic>
+</VIDEO>

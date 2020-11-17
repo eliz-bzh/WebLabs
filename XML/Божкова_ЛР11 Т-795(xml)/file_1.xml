@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<?xml-stylesheet type="text/css" href="file_2.css"?>
+<!--Имя файла:file_1.xml-->
+<FILE_1>
+	<STUDENT>
+		<FAMILY>Иванов</FAMILY>
+		<NAME>Сергей</NAME>
+		<YEAR>1993</YEAR>
+		<GROUP>ИФ 87</GROUP>
+	</STUDENT>
+	<STUDENT>
+		<FAMILY>Петрова</FAMILY>
+		<NAME>Галина</NAME>
+		<YEAR>1992</YEAR>
+		<GROUP>ИФ 87</GROUP>
+	</STUDENT>
+	<STUDENT>
+		<FAMILY>Семенов</FAMILY>
+		<NAME>Валерий</NAME>
+		<YEAR>1993</YEAR>
+		<GROUP>ИФ 88</GROUP>
+	</STUDENT>
+	<STUDENT>
+		<FAMILY>Павлова</FAMILY>
+		<NAME>Ирина</NAME>
+		<YEAR>1994</YEAR>
+		<GROUP>ИФ 89</GROUP>
+	</STUDENT>
+</FILE_1>

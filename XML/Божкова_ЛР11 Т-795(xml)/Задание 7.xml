@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="task7.css"?>
+
+<Literature>
+	<!-- 1 -->
+	<Book number="1">
+		<name STYLE='font-size:10pt'>Иллюстрированные правила дорожного движения Республики Беларусь</name>
+		<page>96</page>
+		<year>2020</year>
+		<author>author 1</author>
+	</Book>
+	<!-- 2 -->
+	<Book number="2">
+		<name>Конституция Республики Беларусь</name>
+		<page>48</page>
+		<year>2020</year>
+		<author>author 2</author>
+	</Book>
+	<!-- 3 -->
+	<Book number="3">
+		<name>Самый богатый человек в Вавилоне</name>
+		<page>160</page>
+		<year>2020</year>
+		<author>author 3</author>
+	</Book>
+	<!-- 4 -->
+	<Book number="4">
+		<name>НЕ ТУПИ</name>
+		<page>208</page>
+		<year>2020</year>
+		<author>author 4</author>
+	</Book>
+</Literature>
