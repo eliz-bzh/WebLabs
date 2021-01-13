@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR4</title>
+    <link rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function prov(){
+            var a = document.forma1.elements[2].value;
+            var b = document.forma1.elements[3].value;
+            if(a==b){
+                alert("Вы зарегистрированы");
+            }
+            else{
+                alert("Введите правильный пароль");
+            }
+            /*if(document.forma1.elements[4].checked && document.forma1.elements[6][3].selected){
+                alert("Вы зарегистрирован.");
+            }
+            else if(document.forma1.elements[5].checked && document.forma1.elements[6][4].selected){
+                alert("Вы зарегистрирована.");
+            }
+            else{
+                alert("У вас хорошее хобби");
+            }*/
+        }
+    </script>
+</head>
+<body>
+    
+    <center>
+       Перед регистрацие ознакомьтесь <a href="2.html">с правилами </a>.<br><br>
+        <form name="forma1" action="mailto:??????">
+            <table border="0" callspacing="5"  callpadding ="5">
+                <caption>Форма регистрации</caption>
+                <tr>
+                    <td align="right" valign="top">Имя</td>
+                    <td><input type="text" name="name" size="25"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">E-mail</td>
+                    <td><input type="text" name="E-mail" size="25"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Пароль</td>
+                    <td><input type="password" name="password" size="25"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Повтор пароля</td>
+                    <td><input type="password" name="password1" size="25"></td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Пол</td>
+                    <td>
+                        <input type="radio" name="sex" value="Man" checked>Мужской
+                        <input type="radio" name="sex" value="Woman">Женский
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Какова ваша профессия?</td>
+                    <td>
+                        <select name="hobby" size="7" multiple>
+                            <option selected value="1">Айтишнек</option>
+                            <option value="2">Повар</option>
+                            <option value="3">Сварщик</option>
+                            <option value="4">Хацкер</option>
+                            <option value="5">Мафиозник</option>
+                            <option value="6">Каменщик</option>
+                            <option value="7">Пленник кбипа :( </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" valign="top">Ваш комментарий...</td>
+                    <td><textarea cols="30" rows="3" wrap="physical"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right" colspan="2"><input type="submit" name="submit" value="Отправить" onclick="prov();"></td>
+                    <td align="right" colspan="2"><input type="reset" name="reset" value="Очистить"></td>
+                </tr>
+            </table>
+        </form>
+        
+    </center>
+</body>
+</html>

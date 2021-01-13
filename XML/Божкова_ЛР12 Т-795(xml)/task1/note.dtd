@@ -1,0 +1,13 @@
+<!ELEMENT note (message+, outcome+)>
+<!ELEMENT message (#PCDATA)>
+<!ATTLIST message
+    number ID #REQUIRED
+    from CDATA #REQUIRED
+    alert (несрочно| нормально| срочно) #IMPLIED
+    alert CDATA "normal"
+>
+<!ELEMENT source EMPTY>
+<!ATTLIST source delivery (e-mail | лично | телефон) #IMPLIED>
+<!ELEMENT outcome (#PCDATA)>
+<!ATTLIST outcome msg IDREF #IMPLIED>
+<!ENTITY today "09.01.21">

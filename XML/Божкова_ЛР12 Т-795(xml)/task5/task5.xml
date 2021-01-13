@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Goods [
+    <!ELEMENT Good (name, amount, description, dateReceipt, dateIssue, warranty, price, manufacturer)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT amount (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT dateReceipt (#PCDATA)>
+    <!ELEMENT dateIssue (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT manufacturer (phone, adress)>
+    <!ELEMENT phone (#PCDATA)>
+    <!ELEMENT adress (#PCDATA)>
+]>
+
+<Goods>
+    <Good>
+        <name>Ацц Лонг</name>
+        <amount>540</amount>
+        <description>Шепучие таблетки для разжиживания мокроты.</description>
+        <dateReceipt>22.11.2020</dateReceipt>
+        <dateIssue>15.11.2020</dateIssue>
+        <warranty>Абитэль</warranty>
+        <price>20 руб.</price>
+        <manufacturer>
+            <phone>+375254567890</phone>
+            <adress>Минская область, г.Заславль, ул.Заславская, 23</adress>
+        </manufacturer>
+    </Good>
+</Goods>

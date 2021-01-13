@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:complexType name="TitleType">
+        <xsd:simpleContent>
+            <xsd:restriction base="xsd:string">
+                <xsd:attribute name="number" type="xsd:integer" use="required" />
+            </xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:complexType name="numberType">
+        <xsd:simpleContent>
+            <xsd:restriction base="xsd:integer"></xsd:restriction>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:element name="GOODS">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="header" minOccurs="1">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="Title" type="TitleType">
+                                <xsd:element name="message" minOccurs="1" type="messageType" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="PILS">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="HEAD">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="PILL">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Name" type="xsd:string" />
+                                                    <xsd:element name="Weight" type="xsd:string" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="STOMAC">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="PILL">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <!-- Возможно их можно было вынести в отдельный тип и переиспользовать но я не хз-->
+                                                    <xsd:element name="Name" type="xsd:string" />
+                                                    <xsd:element name="Weight" type="xsd:string" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+
+                <xsd:element name="MIXTURES">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="PROSTUDA">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="MIXTURE">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Name" type="xsd:string" />
+                                                    <xsd:element name="Weight" type="xsd:string" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                            <xsd:element name="STOMAC">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="MIXTURE">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="Name" type="xsd:string" />
+                                                    <xsd:element name="Weight" type="xsd:string" />
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

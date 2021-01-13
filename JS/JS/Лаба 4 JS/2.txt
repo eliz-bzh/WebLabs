@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Rules</title>
+    <style type="text/css">
+        
+    </style>
+</head>
+<body>
+    <center>
+        <pre>
+            <h2 align="right">
+                <span style="color:green">
+                    * Не пье
+                    * Не куре
+                    * Не матюкаецца
+                    * Все знаюць хто ты
+                    
+                    * Пленник кбипа
+                </span>
+            </h2>
+        </pre>
+    </center>
+</body>
+</html>

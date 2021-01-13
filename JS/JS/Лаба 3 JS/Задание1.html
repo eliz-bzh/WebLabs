@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="getRes()">Push Me</button><br>
+<p><output></output></p>
+<span></span>
+    <script>
+    var getRes = function(){
+    var x = prompt('Введите x');
+    if(x-6==0){
+        alert('На 0 делить нельзя!');
+    } else {
+	
+	x=(Math.pow(x,2)+4)/(x-6);
+        
+	alert(x);
+    }
+ 
+    
+    
+}
+ 
+    </script>
+</body>
+</html>

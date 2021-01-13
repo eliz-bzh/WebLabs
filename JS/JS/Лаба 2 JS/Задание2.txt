@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> Images view </title>
+    </head>
+<body>
+<script type="text/javascript">
+    
+    	var a = prompt('Введите a');
+var b = prompt('Введите b');
+var c = prompt('Введите c');
+
+	
+	alert((Math.sqrt(2*Math.pow(b,2)+2*Math.pow(c,2)-Math.pow(a,2)))/2);
+
+</script> 
+</body>
+</html>

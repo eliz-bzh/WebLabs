@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR3</title>
+    <link rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function ves_max(obj){
+            var x = obj.x.value * 36.11;
+            var y = obj.y.value;
+            if(x>y){
+                obj.res.value=x;
+            }
+            else{
+                obj.res.value=y;
+            }
+        } 
+        function rost_min(obj){
+            var x = obj.x1.value;
+            var y = obj.y1.value;
+            var z = obj.z1.value;
+            if(x>y){obj.res1.value=y;}
+            if(x>z){obj.res1.value=z;}
+            if(z>y){obj.res1.value=y;}
+            if(z>x){obj.res1.value=x;}
+            if(y>z){obj.res1.value=z;}
+            if(y>x){obj.res1.value=x;}
+        } 
+        function anech(obj){
+            var a = obj.a.value;
+            var n = 0; 
+            var b = 0;
+            var r = 0;
+            var ot;
+            while(a>0){
+                n = a%10;
+                b=(a/10)%10;
+                r = (a/100)%10;
+                if((n).toFixed(0)%2!=0){
+                    ot = "1В числе есть нечетные числа";
+                    obj.res2.value = ot;
+                   break;
+                }
+                else if((b).toFixed(0)%2!=0){
+                    ot = "2В числе есть нечетные числа";
+                    obj.res2.value = ot;
+                    break;
+                }
+                else if((r).toFixed(0)%2!=0){
+                    ot = "3В числе есть нечетные числа";
+                    obj.res2.value = ot;
+                    break;
+                }
+                else{
+                    ot = "В числе нет нечетных чисел";
+                    obj.res2.value = ot;
+                    break;
+                }
+            }
+        }
+        function mes(obj){
+            var a = obj.zn.value;
+            if(a<=12 && a>=1)
+            {
+                var s;
+                switch(a){
+                    case '1': s= "Январь"; break;   
+                    case '2': s="Февраль"; break;  
+                    case '3': s="Март"; break;  
+                    case '4': s="Апрель"; break;  
+                    case '5': s="Май"; break;  
+                    case '6': s="Июнь"; break;  
+                    case '7': s="Июль"; break;  
+                    case '8': s="Август"; break;  
+                    case '9': s="Сентябрь"; break;  
+                    case '10': s="Октябрь"; break;  
+                    case '11': s="Ноябрь"; break;  
+                    case '12': s="Декабрь"; break;  
+                    default: s="Введите существующий месяц (от 1 до 12)"; break;
+            }
+            obj.res3.value = s;
+            }
+            else{
+                alert("Необходимое число от 1 до 12!")
+                obj.res3.value="";
+                obj.zn.value="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <noscript>no</noscript>
+    <form name="fourth">
+        <b>№4</b><br><br>
+        Введите месяц (1 до 12):<br><input type="number" name="zn" size="10">
+        <input type="button" value="OK" onClick="mes(fourth);"><br>
+        <textarea cols="20" rows="1"   name="res3"></textarea>
+    </form>
+</body>
+</html>   

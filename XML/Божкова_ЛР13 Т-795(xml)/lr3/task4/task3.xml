@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- товары -->
+<GOODS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="task4.xsd">
+<header>
+        <Title number="1">
+            Название
+        </Title>
+        <Title number="2">Вес в граммах</Title>
+    </header>
+    <!-- таблетки -->
+    <PILS>
+        <!-- таблетки от головы -->
+        <HEAD>
+            <!-- Таблетка  -->
+            <PILL>
+                <!-- название -->
+                <Name>
+                    Анальгин
+                </Name>
+                <!-- вес -->
+                <Weight>
+                    15 грамм
+                </Weight>
+            </PILL>
+            <!-- Таблетка  -->
+            <PILL>
+                <!-- название -->
+                <Name>
+                    Ношпа
+                </Name>
+                <!-- вес -->
+                <Weight>
+                    20 грамм
+                </Weight>
+            </PILL>
+            <!-- Таблетка  -->
+            <PILL>
+                <!-- название -->
+                <Name>
+                    Парацетомол
+                </Name>
+                <!-- вес -->
+                <Weight>
+                    12 грамм
+                </Weight>
+            </PILL>
+        </HEAD>
+        <!-- таблетки от живота -->
+        <STOMAC>
+           <!-- таблетка -->
+            <PILL>
+                <!-- название -->
+                <Name>
+                    Уголь
+                </Name>
+                <!-- вес -->
+                <Weight>
+                    11 грамм
+                </Weight>
+            </PILL>
+           <!-- таблетка -->
+            <PILL>
+                <!-- название -->
+                <Name>
+                    Фестал
+                </Name>
+                <!-- вес -->
+                <Weight>
+                    24 грамма
+                </Weight>
+            </PILL>
+        </STOMAC>
+    </PILS>
+    <!-- микстуры -->
+    <MIXTURES>
+        <!-- микстуры от простуды -->
+        <PROSTUDA>
+            <!-- микстура -->
+            <MIXTURE>
+                <!-- название -->
+                <Name>
+                    АЦЦ
+                </Name>
+                <!-- объем -->
+                <Weight>
+                    50 миллилитров
+                </Weight>
+            </MIXTURE>
+            <!-- микстура -->
+             <MIXTURE>
+                <!-- название -->
+                <Name>
+                    Антигриппин
+                </Name>
+                <!-- объем -->
+                <Weight>
+                    47 грамм
+                </Weight>
+            </MIXTURE>
+        </PROSTUDA>
+        <!-- микстуры от живота -->
+        <STOMACS>
+            <!-- микстура -->
+            <MIXTURE>
+            <!-- название -->
+                <Name>
+                    Аллахол
+                </Name>
+                <!-- объем -->
+                <Weight>
+                    35 миллилитров
+                </Weight>
+            </MIXTURE>
+            <!-- микстура -->
+             <MIXTURE>
+                <!-- название -->
+                <Name>
+                    Энтерфурицин
+                </Name>
+                <!-- объем -->
+                <Weight>
+                    44 миллилитра
+                </Weight>
+            </MIXTURE>
+        </STOMACS>
+    </MIXTURES>
+</GOODS>

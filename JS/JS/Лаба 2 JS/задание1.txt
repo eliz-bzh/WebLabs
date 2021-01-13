@@ -1,0 +1,20 @@
+<HTML> 
+<HEAD> <TITLE> DOM </TITLE> </HEAD> 
+<BODY> 
+<FORM name=Sum> 
+Стоимость масла <INPUT type="text" name="number1"><BR> 
+Стоимость сахара <INPUT type="text" name="number2"><BR> 
+Стоимость колбасы <INPUT type="text" name="number2"><BR> 
+Денежка покупателя <INPUT type="text" name="number2"><BR> 
+<INPUT type="button" name="but"  
+value=" Вычислить " 
+ onClick="document.forms[0].elements[5].value= 
+ parseInt(document.forms[0].elements[0].value)+ 
+ parseInt(document.forms[0].elements[1].value);"> 
+ Сумма <INPUT type="text" name="result"> 
+ 
+
+
+</FORM> 
+</BODY> 
+</HTML> 

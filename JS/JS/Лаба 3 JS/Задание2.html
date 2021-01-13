@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR3</title>
+    <link rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function ves_max(obj){
+            var x = obj.x.value * 36.11;
+            var y = obj.y.value;
+            if(x>y){
+                obj.res.value=x;
+            }
+            else{
+                obj.res.value=y;
+            }
+        } 
+        function rost_min(obj){
+            var x = obj.x1.value;
+            var y = obj.y1.value;
+            var z = obj.z1.value;
+		var rrr;
+            if(x<y){obj.res1.value=y; obj.res2.value='Второй магазин самый дорогой'}
+            if(x<z){obj.res1.value=z; obj.res2.value='Третий магазин самый дорогой'}
+            if(z<y){obj.res1.value=y; obj.res2.value='Второй магазин самый дорогой'}
+            if(z<x){obj.res1.value=x; obj.res2.value='Первый магазин самый дорогой'}
+            if(y<z){obj.res1.value=z; obj.res2.value='Третий магазин самый дорогой'}
+            if(y<x){obj.res1.value=x; obj.res2.value='Первый магазин самый дорогой'}
+        } 
+        function anech(obj){
+            var a = obj.a.value;
+            var n = 0; 
+            var b = 0;
+            var r = 0;
+            var ot;
+            while(a>0){
+                n = a%10;
+                b=(a/10)%10;
+                r = (a/100)%10;
+                if((n).toFixed(0)%2!=0){
+                    ot = "1В числе есть нечетные числа";
+                    obj.res2.value = ot;
+                   break;
+                }
+                else if((b).toFixed(0)%2!=0){
+                    ot = "2В числе есть нечетные числа";
+                    obj.res2.value = ot;
+                    break;
+                }
+                else if((r).toFixed(0)%2!=0){
+                    ot = "3В числе есть нечетные числа";
+                    obj.res2.value = ot;
+                    break;
+                }
+                else{
+                    ot = "В числе нет нечетных чисел";
+                    obj.res2.value = ot;
+                    break;
+                }
+            }
+        }
+        function mes(obj){
+            var a = obj.zn.value;
+            if(a<=12 && a>=1)
+            {
+                var s;
+                switch(a){
+                    case '1': s= "Зима"; break;   
+                    case '2': s="Зима"; break;  
+                    case '3': s="Весна"; break;  
+                    case '4': s="Весна"; break;  
+                    case '5': s="Весна"; break;  
+                    case '6': s="Лето"; break;  
+                    case '7': s="Лето"; break;  
+                    case '8': s="Лето"; break;  
+                    case '9': s="Осень"; break;  
+                    case '10': s="Осень"; break;  
+                    case '11': s="Осень"; break;  
+                    case '12': s="Зима"; break;  
+                    default: s="Введите существующий месяц (от 1 до 12)"; break;
+            }
+            obj.res3.value = s;
+            }
+            else{
+                alert("Необходимое число от 1 до 12!")
+                obj.res3.value="";
+                obj.zn.value="";
+            }
+        }
+    </script>
+</head>
+<body>
+    <noscript>no</noscript>
+    
+    <form name="second">
+        <b>№2</b><br><br>
+        Введите цену первого магазина:<input type="number" name="x1" size="10"><br><br>
+        Введите цену второго магазина:<input type="number" name="y1" size="10"><br><br>
+        Введите цену третьего магазина:<input type="number" name="z1" size="10"><br><br>
+        <input type="button" value="Вычислить" onClick="rost_min(second);"><br><br>
+        Цена: <input type="number" name="res1" size="10"><br><br>
+	Итог: <input type="text" name="res2" size="10"><br><br>
+    </form>
+    
+</body>
+</html>   

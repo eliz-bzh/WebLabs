@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title> Images view </title>
+    </head>
+<body>
+<script type="text/javascript">
+    
+    	var x = prompt('Введите x');
+
+if(x-6=0)
+{
+alert(Error: х не должен быть равен 0);
+} 
+else  
+{
+alert((Math.pow(x,2)+4)/(x-6));
+} 
+
+	
+
+</script> 
+</body>
+</html>

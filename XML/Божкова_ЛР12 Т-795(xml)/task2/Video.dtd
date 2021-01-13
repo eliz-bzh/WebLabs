@@ -1,0 +1,66 @@
+<!ELEMENT VIDEO (main, VID, MemorySupport, configure, connectors, interfaces, coulers, supply, compability, logistic)>
+<!ELEMENT main (manufacturer, model, length)>
+<!ELEMENT VID (videoMemory, RAMDAC, maximumResolution2D3D, HDCP, API)>
+<!ELEMENT MemorySupport (type, memoryBusWidth, memoryFrequency)>
+<!ELEMENT configure (chip, techprocess, chipFrequency, pixelsConveers, processors)>
+<!ELEMENT interfaces (interface)>
+<!ELEMENT coulers (speedControl, cool, constructionCoolSystem)>
+<!ELEMENT supply (powerConnector)>
+<!ELEMENT compatibility (systemPermitions, computingSupport, OSSuppurt)>
+<!ELEMENT logistic (size, wightBrutal)>
+
+<!ELEMENT Manufacturer (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT videoMemory (#PCDATA)>
+<!ELEMENT RAMDAC (#PCDATA)>
+<!ELEMENT maximumResolution2D3D (#PCDATA)>
+<!ELEMENT HDCP (#PCDATA)>
+<!ELEMENT API (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT memoryBusWidth (#PCDATA)>
+<!ELEMENT memoryFrequency (#PCDATA)>
+<!ELEMENT chip (#PCDATA)>
+<!ELEMENT techprocess (#PCDATA)>
+<!ELEMENT chipFrequency (#PCDATA)>
+<!ELEMENT pixelsConveers (#PCDATA)>
+<!ELEMENT processors (#PCDATA)>
+<!ELEMENT connectors (ports)>
+<!ELEMENT ports (#PCDATA)>
+<!ELEMENT interface (#PCDATA)>
+<!ELEMENT speedControl (#PCDATA)>
+<!ELEMENT cool (#PCDATA)>
+<!ELEMENT constructionCoolSystem (#PCDATA)>
+<!ELEMENT powerConnector (#PCDATA)>
+<!ELEMENT systemPermitions (#PCDATA)>
+<!ELEMENT computingSupport (#PCDATA)>
+<!ELEMENT OSSuppurt (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT wightBrutal (#PCDATA)>
+
+<!ATTLIST manufacturer title CDATA #REQUIRED>
+<!ATTLIST model title CDATA #REQUIRED>
+<!ATTLIST videoMemory title CDATA #REQUIRED>
+<!ATTLIST RAMDAC title CDATA #REQUIRED>
+<!ATTLIST maximumResolution2D3D title CDATA #REQUIRED>
+<!ATTLIST HDCP title CDATA #REQUIRED>
+<!ATTLIST API title CDATA #REQUIRED>
+<!ATTLIST type title CDATA #REQUIRED>
+<!ATTLIST memoryBusWidth title CDATA #REQUIRED>
+<!ATTLIST memoryFrequency title CDATA #REQUIRED>
+<!ATTLIST chip title CDATA #REQUIRED>
+<!ATTLIST techprocess title CDATA #REQUIRED>
+<!ATTLIST chipFrequency title CDATA #REQUIRED>
+<!ATTLIST pixelsConveers title CDATA #REQUIRED>
+<!ATTLIST processors title CDATA #REQUIRED>
+<!ATTLIST ports title CDATA #REQUIRED>
+<!ATTLIST interface title CDATA #REQUIRED>
+<!ATTLIST speedControl title CDATA #REQUIRED>
+<!ATTLIST cool title CDATA #REQUIRED>
+<!ATTLIST constructionCoolSystem title CDATA #REQUIRED>
+<!ATTLIST supply title CDATA #REQUIRED>
+<!ATTLIST powerConnector title CDATA #REQUIRED>
+<!ATTLIST systemPermitions title CDATA #REQUIRED>
+<!ATTLIST computingSupport title CDATA #REQUIRED>
+<!ATTLIST OSSuppurt title CDATA #REQUIRED>
+<!ATTLIST size title CDATA #REQUIRED>
+<!ATTLIST wightBrutal title CDATA #REQUIRED>
